@@ -7,7 +7,7 @@ Discussions-To: Pending
 Status: Draft
 Type: Standards Track
 Topic: Packaging
-Created: 2026-Apr-16
+Created: 16-Apr-2026
 Post-History: `13-Apr-2026 <https://discuss.python.org/t/106959>`__
 
 
@@ -220,4 +220,3 @@ Copyright
 
 This document is placed in the public domain or under the CC0-1.0-Universal
 license, whichever is more permissive.
-
