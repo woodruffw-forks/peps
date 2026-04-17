@@ -152,9 +152,12 @@ difficult or infeasible, including:
   negotiation, and can often be served trivially by a CDN or a minimal
   HTTP server (like ``python -m http.server``).
 
-  By contrast, the JSON representation currently requires explicit content
-  negotiation. Any future efforts to remove the HTML representation will likely
-  require a simpler adoption story for the JSON representation.
+  The JSON representation does not technically require content negotiation
+  either, but in practice clients that consume it expect to perform
+  explicit content negotiation due to the assumption that the same URL
+  provides both representations. Consequently, any future efforts to remove the
+  HTML representation will likely require a simpler adoption story for the JSON
+  representation.
 
 - The HTML representation is currently easier for installers like ``pip``
   to parse incrementally, as the Python standard library includes
