@@ -61,6 +61,14 @@ has modernized:
   ``pypi:project-status-reason``, effectively flattening an object
   representation that appears naturally in the JSON representation.
 
+  Similarly, the HTML representation's rigidity makes it an optimization
+  barrier: :pep:`658` allows indices to serve distribution metadata via
+  the simple repository API, but the absence of a straightforward and
+  backwards-compatible way to encode that metadata within the HTML
+  representation means that installers must incur an additional HTTP round-trip
+  to fetch relatively small amounts of information. :pep:`740` adopts a
+  similar approach, with similar overhead repercussions.
+
   In practice, some index PEPs have chosen not to modify the HTML representation
   at all, and instead focus solely on the JSON representation. :pep:`700`
   for example introduces both per-distribution metadata *and* a top-level
