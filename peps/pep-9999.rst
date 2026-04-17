@@ -1,5 +1,5 @@
 PEP: 9999
-Title: Deprecating the HTML simple repository API
+Title: Freezing the HTML simple repository API
 Author: William Woodruff <william@yossarian.net>
 Sponsor: TODO
 PEP-Delegate: TODO
@@ -14,19 +14,19 @@ Post-History: `13-Apr-2026 <https://discuss.python.org/t/106959>`__
 Abstract
 ========
 
-This PEP proposes formally deprecating the
+This PEP proposes freezing the
 :ref:`standard HTML representation <packaging:simple-repository-html-serialization>`
 of the simple repository API, as originally specified in :pep:`503`
 and updated over subsequent PEPs.
 
-In this context of this PEP, *deprecation* means that the HTML representation
-is considered *frozen* from the perspective of the standards process,
+In this context of this PEP, "freezing" means that the HTML representation
+is considered complete from the perspective of the standards process,
 and **SHOULD NOT** be updated by future PEPs. Future PEPs **SHOULD** instead
 target the
 :ref:`standard JSON representation <packaging:simple-repository-api-json>`,
 as originally specified in :pep:`691`.
 
-Similarly, this PEP's deprecation of the HTML representation does **not** imply
+Similarly, this PEP's freezing of the HTML representation does **not** imply
 that installers should remove support for the HTML representation, or that
 indices (like PyPI) will or should stop providing an HTML representation.
 
@@ -100,7 +100,7 @@ The purpose of this PEP is to formalize this status quo.
 Specification
 =============
 
-The HTML representation of the simple repository API is deprecated
+The HTML representation of the simple repository API is frozen
 for the purposes of Python packaging standards processes. Future
 Python packaging PEPs **SHOULD NOT** modify the HTML representation of the
 simple repository API, and **MUST** instead modify the JSON representation.
@@ -108,7 +108,7 @@ simple repository API, and **MUST** instead modify the JSON representation.
 This PEP does not alter the status of the HTML representation on PyPI
 and does not prescribe any behavioral changes for installers.
 
-One functional consequence of this deprecation is that future changes
+One functional consequence of this freeze is that future changes
 to the simple repository API will be
 :ref:`versioned <packaging:simple-repository-api-versioning>` as they are
 currently, but that only the JSON representation will receive changes
@@ -166,13 +166,13 @@ Security Implications
 =====================
 
 This PEP does not identify and positive or negative security implications
-associated with deprecating the HTML representation of the simple repository
+associated with freezing the HTML representation of the simple repository
 API.
 
 How to Teach This
 =================
 
-Because this PEP only deprecates the HTML representation of the simple repository
+Because this PEP only freezes the HTML representation of the simple repository
 API for the purposes of Python packaging standards processes, the end user
 implications of this PEP are limited.
 
@@ -212,7 +212,7 @@ Encouraging indices and installers to aggressively remove support for the HTML
 representation is another option. However, as noted above, this is unrealistic
 in the near term, and would be disruptive to the ecosystem.
 
-The authors of this PEP believe that deprecation is a more gradual and
+The authors of this PEP believe that freezing is a more gradual and
 pragmatic approach that better reflects the ecosystem's reality.
 
 Copyright
