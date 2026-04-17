@@ -3,11 +3,11 @@ Title: Deprecating the HTML simple repository API
 Author: William Woodruff <william@yossarian.net>
 Sponsor: TODO
 PEP-Delegate: TODO
-Discussions-To: TODO
+Discussions-To: Pending
 Status: Draft
 Type: Standards Track
 Topic: Packaging
-Created: 2026-04-16
+Created: 2026-Apr-16
 Post-History: `13-Apr-2026 <https://discuss.python.org/t/106959>`__
 
 
