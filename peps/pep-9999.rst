@@ -26,7 +26,7 @@ target the
 :ref:`standard JSON representation <packaging:simple-repository-api-json>`,
 as originally specified in :pep:`691`.
 
-Similarly, this PEP's freezing of the HTML representation does **not** imply
+Similarly, this PEP's freezing of the HTML representation does **not** stipulate
 that installers should remove support for the HTML representation, or that
 indices (like PyPI) will or should stop providing an HTML representation.
 
